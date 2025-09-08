@@ -109,7 +109,6 @@ audio-recognition/
 ├── requirements-dev.txt     # Development dependencies
 ├── scripts/
 │   └── setup_system_deps.sh # System dependency installer
-├── test.py                  # Simple test script
 └── .env                     # Your API key (create this)
 ```
 
@@ -118,11 +117,6 @@ audio-recognition/
 ### Install Development Dependencies
 ```bash
 pip install -r requirements-dev.txt
-```
-
-### Run Tests
-```bash
-pytest
 ```
 
 ### Code Formatting
@@ -154,19 +148,3 @@ flake8 audio_recognizer.py
 ### "Invalid API key"
 - Verify your AcoustID API key
 - Check environment variables or .env file
-
-### PyAudio Installation Issues
-- **Ubuntu/Debian**: `sudo apt install portaudio19-dev python3-dev`
-- **macOS**: `brew install portaudio`
-- **Windows**: Install Visual Studio Build Tools
-
-## 🛠️ Dependencies
-
-- **Core**: acoustid, librosa, pydub, numpy, scipy
-- **Optional**: pyaudio (for microphone recording)
-- **System**: FFmpeg, PortAudio
-
-
-- Check the troubleshooting section above
-- Review command-line help: `python audio_recognizer.py --help`
-- For AcoustID API issues, visit: https://acoustid.o
