@@ -1,0 +1,29 @@
+# Core dependencies - install these first
+setuptools>=65.0
+wheel>=0.37.0
+pip>=22.0
+
+# Audio processing (install in this order)
+numpy>=1.21.0
+scipy>=1.9.0
+soundfile>=0.12.0
+librosa>=0.9.0
+pydub>=0.25.0
+
+# API and web
+requests>=2.28.0
+requests-cache>=1.0.0
+
+# Chromaprint and AcoustID
+pyacoustid>=1.2.0
+
+# Configuration
+python-dotenv>=1.0.0
+
+# CLI and utilities  
+click>=8.0.0
+rich>=13.0.0
+tqdm>=4.60.0
+
+# Optional: Audio recording (install manually if needed)
+# pyaudio>=0.2.11
